@@ -4,9 +4,10 @@
   --border: #d1d5db;
   --accent: #2563eb;
   --bg: #ffffff;
+  --card-bg: #f9fafb;
 
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.5;
+  line-height: 1.55;
   color: var(--text);
   background: var(--bg);
   color-scheme: light dark;
@@ -19,6 +20,7 @@
     --border: #374151;
     --accent: #60a5fa;
     --bg: #111827;
+    --card-bg: #1f2937;
   }
 }
 
@@ -31,9 +33,9 @@ body {
 }
 
 .app {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 3rem 1.5rem 4rem;
 }
 
 h1 {
@@ -46,9 +48,41 @@ h1 {
   color: var(--muted);
 }
 
+.card {
+  margin: 0 0 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.hint {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.upload-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.status-ok {
+  margin: 0.75rem 0 0;
+  color: #16a34a;
+}
+
 .query-row {
   display: flex;
   gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .query-row input {
@@ -61,7 +95,7 @@ h1 {
   color: inherit;
 }
 
-.query-row button {
+button {
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
   border: none;
@@ -71,21 +105,77 @@ h1 {
   cursor: pointer;
 }
 
-.query-row button:hover {
+button:hover {
   opacity: 0.9;
 }
 
-.query-row button:disabled {
+button:disabled {
   opacity: 0.6;
   cursor: default;
 }
 
+.plan {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.plan li {
+  margin-bottom: 0.4rem;
+}
+
+.activity {
+  margin: 1rem 0 0;
+  padding: 0.75rem 1rem 0.75rem 2rem;
+  border-top: 1px dashed var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.activity li {
+  margin-bottom: 0.25rem;
+}
+
+.pulse {
+  list-style: none;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.report :is(h1, h2, h3):not(:first-child) {
+  margin-top: 1.25rem;
+}
+
+.report pre {
+  overflow-x: auto;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background: rgba(127, 127, 127, 0.12);
+}
+
+.sources {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.sources li {
+  margin-bottom: 0.3rem;
+}
+
+.sources a {
+  color: var(--accent);
+}
+
 .results {
-  margin-top: 2rem;
   padding: 1.25rem;
   border: 1px dashed var(--border);
   border-radius: 8px;
-  min-height: 8rem;
+  min-height: 6rem;
 }
 
 .placeholder {
@@ -94,20 +184,6 @@ h1 {
 }
 
 .error {
-  margin: 0;
+  margin: 0.5rem 0;
   color: #dc2626;
-}
-
-.results h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.1rem;
-}
-
-.results .plan {
-  margin: 0;
-  padding-left: 1.25rem;
-}
-
-.results .plan li {
-  margin-bottom: 0.4rem;
 }
