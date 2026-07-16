@@ -37,6 +37,34 @@ design-heavy or open-ended work. Finally, the 18-minute daily commitment proved 
 sustain for students juggling jobs: dropout among students working more than 20 hours
 per week was 2.4 times the average.
 
+## Methodology
+
+The control group was matched on incoming GPA, declared major, course section, and —
+where possible — instructor. Exam difficulty across years was equated using 20 anchor
+items per course that appeared unchanged in both years' finals; score improvements are
+reported after equating. Retention at six months was measured with a proctored
+40-item recall test offered for a 25-dollar gift card, taken by 68 percent of program
+students and 61 percent of controls, and the report weights results to correct for
+the response-rate gap.
+
+## Per-course detail
+
+General Chemistry saw the largest exam gain (16.1 percent) and also had the
+highest-rated review items in student feedback. Introductory Biology gained 13.8
+percent, Introduction to Programming gained 11.2 percent, and Calculus I gained the
+least (8.9 percent). The authors hypothesize the Calculus gap reflects the fact that
+procedural fluency benefits more from worked practice than from recall prompts, and
+recommend pairing cards with weekly problem sets in quantitative courses.
+
+## Student feedback
+
+In the end-of-semester survey, 72 percent of program students said the daily reviews
+reduced pre-exam cramming, and 64 percent said they would voluntarily use the system
+in future courses. The most-cited frustration was card overload after missed days;
+the backlog after a skipped week averaged 96 cards. Dr. Mehta's team shipped a
+"catch-up cap" in week nine that limited any day's queue to 40 cards, after which
+weekly dropout halved.
+
 ## Recommendation
 
 The evaluation committee recommended expanding the program to all first-year STEM

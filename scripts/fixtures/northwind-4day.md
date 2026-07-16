@@ -39,6 +39,39 @@ Not everything improved. Cross-timezone coordination with the Austin office got 
 with one fewer overlapping day, and 12 percent of employees reported working "some or
 most" Fridays anyway, a pattern the report flags as a burnout risk rather than a win.
 
+## How the numbers were measured
+
+Productivity was defined before the trial began, not after: weighted story points
+delivered per engineer-week, with weights frozen at January 2025 values and a
+three-office normalization factor so the Berlin office's larger legacy-maintenance
+load did not distort comparisons. Non-engineering departments used
+function-specific measures agreed with each VP (closed tickets for support,
+qualified pipeline for sales). All figures were audited by an external firm,
+Ravenscroft Analytics, which had access to raw tracker data.
+
+The report is explicit that the comparison period (February to September 2024) was
+itself unusual — the company shipped a major platform migration that spring — and
+includes a sensitivity analysis showing the productivity gain ranges from 13 to 21
+percent depending on how migration work is weighted. The 18 percent headline number
+uses the pre-registered weighting.
+
+## Employee experience
+
+The internal survey ran monthly. Employee net promoter score (eNPS) rose from 31
+before the trial to 58 by month six. Self-reported "ability to disconnect on
+weekends" improved for 77 percent of staff. The most common complaint, logged by 23
+percent of respondents at least once, was Thursday crunch: work compressing into the
+last day before the long weekend. The people team responded mid-trial by moving all
+deadline defaults from Thursday to Wednesday.
+
+## Costs
+
+Direct costs were small: 90,000 dollars for scheduling and meeting-analytics
+software, plus an estimated 130,000 dollars of one-time process redesign time. The
+report attributes the bulk of the win to meeting reduction rather than the day off
+itself, noting that meeting hours fell by 31 percent while focus-time blocks grew by
+almost exactly the same amount.
+
 ## Decision
 
 In October 2025 the executive team voted to make the four-day week permanent, with two

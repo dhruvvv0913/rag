@@ -21,10 +21,13 @@ create table if not exists chunks (
   chunk_index int
 );
 
--- Approximate-nearest-neighbour index. With small data Postgres may ignore it
--- and scan sequentially — that is fine; it matters as the table grows.
-create index if not exists chunks_embedding_idx
-  on chunks using ivfflat (embedding vector_cosine_ops) with (lists = 100);
+-- Approximate-nearest-neighbour index. HNSW, not ivfflat: ivfflat computes
+-- its cluster centers when the index is CREATED, so building it on an empty
+-- table (like this script does) leaves garbage centers and queries silently
+-- return partial results. HNSW builds incrementally and has no such trap.
+drop index if exists chunks_embedding_idx;
+create index if not exists chunks_embedding_hnsw_idx
+  on chunks using hnsw (embedding vector_cosine_ops);
 
 -- Evaluation test set (§11).
 create table if not exists eval_cases (
