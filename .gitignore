@@ -27,3 +27,6 @@ dist-ssr
 .vercel
 .env*
 !.env.example
+
+# local eval run records
+eval-results/
