@@ -98,8 +98,16 @@ h1 {
   color: #dc2626;
 }
 
-.results pre {
+.results h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.results .plan {
   margin: 0;
-  white-space: pre-wrap;
-  word-break: break-word;
+  padding-left: 1.25rem;
+}
+
+.results .plan li {
+  margin-bottom: 0.4rem;
 }

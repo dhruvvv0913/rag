@@ -13,10 +13,10 @@ export default function App() {
     setResult(null)
     setLoading(true)
     try {
-      const res = await fetch('/api/echo', {
+      const res = await fetch('/api/plan', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text: question }),
+        body: JSON.stringify({ question }),
       })
       const data = await res.json()
       if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`)
@@ -47,7 +47,16 @@ export default function App() {
 
       <section className="results">
         {error && <p className="error">{error}</p>}
-        {result && <pre>{JSON.stringify(result, null, 2)}</pre>}
+        {result?.subQuestions && (
+          <>
+            <h2>Research plan</h2>
+            <ol className="plan">
+              {result.subQuestions.map((sq) => (
+                <li key={sq}>{sq}</li>
+              ))}
+            </ol>
+          </>
+        )}
         {!error && !result && <p className="placeholder">Results will appear here.</p>}
       </section>
     </main>
