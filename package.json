@@ -7,11 +7,17 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test",
+    "seed": "node --env-file=.env scripts/seed-docs.js && node --env-file=.env scripts/seed-eval.js",
+    "eval": "node --env-file=.env scripts/run-eval.js"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.110.7",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "react-markdown": "^10.1.0",
+    "unpdf": "^1.6.2"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
